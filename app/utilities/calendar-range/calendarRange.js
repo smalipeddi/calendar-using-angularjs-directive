@@ -4,7 +4,10 @@ var CalendarRange = {
 
   prepareDate : function(date) {
     date = new Date(date);
+    console.log(date);
     var day = date.getDay();
+     console.log(day);
+
     return {
       date : date,
       weekday : day != 0 && day != 6,
